@@ -9,3 +9,4 @@ APDescription.txt
 MTPs-*.*
 release.properties
 .DS_Store
+/nbproject/
