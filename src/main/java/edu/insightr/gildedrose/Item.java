@@ -37,6 +37,10 @@ public abstract class Item implements IVisitable {
     public void setQuality(int quality) {
         this.quality = quality;
     }
+    
+    boolean isExpired(){
+        return this.sellIn < 0;
+    }
 
     @Override
     public String toString() {

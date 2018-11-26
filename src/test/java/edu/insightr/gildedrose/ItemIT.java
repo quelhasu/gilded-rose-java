@@ -19,7 +19,7 @@ public class ItemIT {
     
     @Before
     public void setUp() {
-        item = new Item("name", 10, 2);
+//        item = new Item("name", 10, 2);
     }
 
     @After
