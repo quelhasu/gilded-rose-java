@@ -1,6 +1,6 @@
 package edu.insightr.gildedrose;
 
-public abstract class Item implements IVisitable {
+public class Item {
 
     private String name;
     private int sellIn;
@@ -36,6 +36,10 @@ public abstract class Item implements IVisitable {
 
     public void setQuality(int quality) {
         this.quality = quality;
+    }
+    
+    boolean isExpired(){
+        return this.sellIn < 0;
     }
 
     @Override
